@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE6D54A4-4EC2-4240-A7D8-66F9807FB77C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DOAN_QLSV</RootNamespace>
+    <AssemblyName>DOAN_QLSV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS_UC0_DangNhap.cs" />
+    <Compile Include="BUS_UC0_DoiMatKhau.cs" />
+    <Compile Include="BUS_UC1_MatKhauSV.cs" />
+    <Compile Include="BUS_UC1_QuanLyGiaoVien.cs" />
+    <Compile Include="BUS_UC1_QuanLyLopHoc.cs" />
+    <Compile Include="BUS_UC1_QuanLyMonHoc.cs" />
+    <Compile Include="BUS_UC1_QuanLySinhVien.cs" />
+    <Compile Include="BUS_UC1_QuanLyTrinhDo.cs" />
+    <Compile Include="BUS_UC2_ThemSuaXemInDiem.cs" />
+    <Compile Include="BUS_UC3_LichHoc.cs" />
+    <Compile Include="BUS_UC4_DanhSachGiaoVien1Lop.cs" />
+    <Compile Include="BUS_UC4_DanhSachSinhVien1Lop.cs" />
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachGiaoVien1Lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachGiaoVien1Lop.Designer.cs">
+      <DependentUpon>DanhSachGiaoVien1Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachSinhVien1Lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachSinhVien1Lop.Designer.cs">
+      <DependentUpon>DanhSachSinhVien1Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="FormDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoiMatKhau.Designer.cs">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_TrangChu.Designer.cs">
+      <DependentUpon>form_TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatKhauSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatKhauSinhVien.Designer.cs">
+      <DependentUpon>MatKhauSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyLichHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyLichHoc.Designer.cs">
+      <DependentUpon>QuanLyLichHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyDiem.Designer.cs">
+      <DependentUpon>QuanLyDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyGiaoVien.Designer.cs">
+      <DependentUpon>QuanLyGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyLopHoc.Designer.cs">
+      <DependentUpon>QuanLyLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyMonHoc.Designer.cs">
+      <DependentUpon>QuanLyMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLySinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLySinhVien.Designer.cs">
+      <DependentUpon>QuanLySinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTrinhDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTrinhDo.Designer.cs">
+      <DependentUpon>QuanLyTrinhDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachGiaoVien1Lop.resx">
+      <DependentUpon>DanhSachGiaoVien1Lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachSinhVien1Lop.resx">
+      <DependentUpon>DanhSachSinhVien1Lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoiMatKhau.resx">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_TrangChu.resx">
+      <DependentUpon>form_TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatKhauSinhVien.resx">
+      <DependentUpon>MatKhauSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyLichHoc.resx">
+      <DependentUpon>QuanLyLichHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyDiem.resx">
+      <DependentUpon>QuanLyDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyGiaoVien.resx">
+      <DependentUpon>QuanLyGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyLopHoc.resx">
+      <DependentUpon>QuanLyLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyMonHoc.resx">
+      <DependentUpon>QuanLyMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLySinhVien.resx">
+      <DependentUpon>QuanLySinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTrinhDo.resx">
+      <DependentUpon>QuanLyTrinhDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\icon_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\icon_see.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\icon_import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\icon_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\icon_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\icon_erase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\icon_cancell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\icon_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tải xuống %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tải xuống %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tải xuống %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tải xuống %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tải xuống %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tải xuống.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-camera-icon-png-image_1871609.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\menu %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\classroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\subjects.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\level-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\timetable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\cancelled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_456212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\user_456212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quan-ly-lop-hoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quan-ly-lop-hoc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quan-ly-lop-hoc2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-system-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %284%292.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
